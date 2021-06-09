@@ -1,0 +1,8 @@
+.presupuesta {
+    display:block;
+    position: relative;
+    width:auto;
+    @include text ($font-base, 400, $color-0, center, $transform: false);
+    font-size: 3rem;
+    margin: 3rem;
+}

@@ -1,0 +1,40 @@
+.staff {
+    background: rgba(0, 0, 0, 0.7);
+    background-position: center;
+    margin: 2rem;
+    align-content: center;
+    border-radius: $border-radius*2;
+    position: relative;
+    @extend %flexbox-center;
+    align-self: center;
+}
+
+.staff-page {
+    background-image: url(../images/staff/video-team.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size:cover;
+    z-index: -1;    
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    margin: 2rem;
+    width:80%;
+}
+
+.staff-text {
+    @include text ($font-base, 200, $color-4, justify, $transform: false);
+    letter-spacing: 1px;
+    font-size: 3rem;
+    margin: 30px 30px;
+}
+
+.equipo {
+    display:inline-block;
+    margin: 10px;
+    width:300px;
+    height:auto;
+}

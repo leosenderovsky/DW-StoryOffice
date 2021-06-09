@@ -1,0 +1,119 @@
+/* Import */
+@import 'base/colors';
+@import 'base/fonts';
+@import 'base/querys';
+@import 'base/size';
+@import 'base/variables';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/buttons';
+@import 'components/carousels';
+@import 'components/forms';
+@import 'functions/extends';
+@import 'functions/lists';
+@import 'functions/mixins';
+@import 'sections/contacto';
+@import 'sections/home';
+@import 'sections/presupuesta';
+@import 'sections/quienes-somos';
+@import 'sections/presupuesta';
+@import 'sections/servicios';
+@import 'sections/trabajos';
+@import 'sections/404';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: $font-size-base;
+}
+
+.icon-fixed {
+    position:fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 10;    
+    filter:grayscale(100%);
+    transition: filter .3s ease-in-out;
+
+    @media (min-width: $bp-desktop) {
+        width: 4%;
+    }
+
+    @media (max-width: $bp-tablet-max) {
+        width: 10%;
+    }
+    
+    &:hover {
+        filter: grayscale(0%) drop-shadow(0px 1px 10px rgb(170, 170, 170));
+    }
+}
+
+.body-container {
+    min-height: calc(100vh);
+    margin-top: 100px;
+    width: 100%;
+}
+
+.section-title {
+    font-family: $font-base;
+    font-weight: 300;
+    font-size: 5rem;
+    text-transform: $text-transform-base;
+    text-align: center;
+    background-color: $color-2;
+    color: $color-4;
+    margin: 0 0 5rem 0;
+}
+
+hr.separador {
+    align-items: center;
+    text-align: center;
+    margin: 2% 10%;
+    border-top: 3px solid $color-1;
+    @extend %flexbox-center;
+}
+
+hr.separador-white {
+    align-items: center;
+    text-align: center;
+    margin: 2% 2%;
+    border-top: 3px solid $color-4;
+}
+
+.inner-section {
+    align-items: center;
+    text-align: center;
+    @extend %flexbox-center;
+}
+
+.inner-section-title {
+    margin: 2rem 0 5rem 0;
+    font-family: $font-base;
+    font-weight: 300;
+    font-size: 5rem;
+    text-transform: $text-transform-base;
+    text-align: center;
+    color: $color-0;
+    padding-bottom: 1rem;
+}
+
+.inner-section-title-white {
+    margin: 1rem;
+    font-family: $font-base;
+    font-weight: 300;
+    font-size: 5rem;
+    text-transform: $text-transform-base;
+    text-align: center;
+    color: $color-4;
+    text-shadow: $shadow;
+    padding-bottom: 1rem;
+}
+
+
+
+

@@ -1,0 +1,26 @@
+.marca {    
+    object-fit: cover;
+    filter:grayscale(100%);
+    transition: filter .3s ease-in-out;
+    align-self: center;
+
+    &:hover {
+        filter:grayscale(0%);
+    }
+}
+
+.videos-section {
+    @extend %flexbox-center;
+    flex-direction: row;
+}
+
+.videos-trabajos {
+    width:70%;
+}
+
+
+iframe {
+    border: none;
+    padding: 10px;
+    max-width: 100%;
+}

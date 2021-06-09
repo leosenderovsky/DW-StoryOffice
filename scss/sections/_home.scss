@@ -1,0 +1,164 @@
+.video-container {
+    @media (min-width: $bp-desktop) {
+        padding-top:5%;
+    }
+
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        padding-top:10%;
+    }
+    
+    @media (max-width: $bp-mobile) {
+        padding-top:15%;
+    }
+}
+
+.header-video {
+    @extend %flexbox-center;
+    width: $width-base;
+    object-fit: cover;
+
+    @media (min-width: $bp-desktop) {
+        height: 62.5em;        
+    }
+    @media (max-width: $bp-tablet-max) {
+        height: 10%;
+    }
+}
+
+.header-title {
+    @include text ($font-base, 500, $color-0, center, $transform: true);
+    overflow: hidden;
+
+
+    @media (min-width: $bp-desktop) {
+        margin: 0 auto;        
+        font-size: 5.25rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        white-space: nowrap;
+        animation: typewriter 4s steps(44) 0.5s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+        border-right: .10em solid $color-1;    
+
+    }  
+    
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        margin: 2rem 5rem;
+        font-size: 6rem;
+        @include flexbox (flex, center);
+        flex-wrap: wrap;
+        line-height: 8rem;
+
+    }
+
+    @media (max-width: $bp-mobile) {
+        margin: 1rem;
+        font-size: 3rem;
+        @include flexbox (flex, center);
+        flex-wrap: wrap;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 1501px) {
+    
+    @keyframes typewriter {
+    
+        from { width: 0 }
+        to { width: 56% }        
+    }    
+}
+
+@media (max-width: 1500px) {
+
+    @keyframes typewriter {
+        from { width: 0 }
+        to { width: 76% }
+    } 
+}
+
+@keyframes blinkTextCursor {
+    from{border-color: $color-0}
+    to{border-color: transparent; }
+}
+
+
+.space {
+    height: 5rem;
+}
+
+.icon-box-section {
+    margin: 1.5rem;
+    @extend %flexbox-around;
+}
+
+.icon-box {
+    width: 20rem;
+    margin: 1em;
+    background-color: $color-3;
+    border-radius: $border-radius*2;
+    padding: 3rem 1rem 2rem 1rem;
+    @include text ($font-base, 400, $color-0, center, $transform: true);
+    font-size: 300%;
+    &:hover {
+        margin: 1em;
+        padding: 3rem 1rem 2rem 1rem;
+        background-color: $color-1;
+        transform: translateY(5px);
+        transition: all .1s;
+        color: $color-4;        
+        animation: button-change-color .1s;
+        @keyframes button-change-color {
+            from {background:$color-4; color: $color-2}
+            to {background:$color-0; color:$color-3}
+        }    
+    }
+}
+
+#servicios {
+    display: block;
+    text-align: center;
+}
+
+#confian-en-nosotros {
+    display: block;
+    text-align: center;
+}
+
+#quienes-somos {
+    background-image: url(../images/staff/video-team.jpg);
+    background-size: cover;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-repeat: no-repeat;
+    background-position: sticky;
+    text-align: center;
+    z-index: -1;
+    height: 70vh;
+    margin-bottom: -50px;
+}
+
+#presupuesta {
+    background-color: #fff;
+    text-align: center;
+}
+
+#contacto {
+    display: block;
+    text-align: center;
+    height: auto;
+}
+
+.mapa {
+    height: 300px;
+    margin: 2rem;
+    text-align: center;
+}
+
+.contacto {
+    margin: 2rem;
+    @include text ($font-base, 400, $color-0, justify, $transform: false);
+    font-size: 3rem;
+}

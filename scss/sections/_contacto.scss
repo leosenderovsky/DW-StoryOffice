@@ -1,0 +1,19 @@
+.inner-contacto {
+    margin-bottom: 100px;
+}
+
+.inner-contacto-map-text {
+    border: 0px;
+    margin: 5% 10% 0 10%;
+}
+
+.inner-contacto-map {
+    width: 600px;
+    height: 400px;
+}
+
+.inner-contacto-text {
+    margin: 10%;
+    @include text ($font-base, 200, $color-0, center, $transform: false);
+    font-size: 3rem;
+}

@@ -1,0 +1,228 @@
+@import '../functions/mixins';
+
+button {
+    padding: 4rem;
+    position: relative;
+    margin: 5rem;
+}
+
+/*.btn {
+    border-radius: 0;
+}*/
+
+
+/*.item-button,
+.inner-button,
+.btn-primary {
+    background-color: $color-2;
+    @include text ($font-base, 100, $color-4, center, $transform: true);
+    font-family: $font-base;
+    text-align: center;
+    text-transform: $text-transform-base;
+    border: none;
+    padding: 10px;
+    position: relative;    
+    text-decoration: none;
+    color: $color-4;
+    cursor: pointer;  
+    line-height: 1em;
+    outline: none;
+    margin: 3rem 0;
+
+    @media (min-width: $bp-tablet-min) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 2rem;
+    }
+
+    &:hover {
+        box-shadow: inset 0 0 0 1px $color-1;
+        border-radius: $border-radius;
+        animation: button-change-color .5s;
+        transform: scale(1.1);   
+        transition: all .5s;
+        color: $color-1;
+        background-color: $color-3;
+    }
+}
+
+@keyframes button-change-color {
+    from {background:$color-2; color:$color-4}
+    to {background:$color-3; color:$color-1}
+}*/
+
+
+.btn-primary {
+    @include text ($font-base, 400, $color-0, center, $transform: true);
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 0px solid $color-1;
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+    z-index:10;
+    margin: 1rem 0 3rem;
+    padding: 1rem;
+    
+    @media (min-width: $bp-tablet-min) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 2rem;
+    }  
+
+    &::before {
+        content: '';
+        width: 0%;
+        height: 100%;
+        display: block;
+        background: $color-0;
+        color: $color-4;
+        position: absolute;
+        -ms-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg); 
+        transform: skewX(-20deg);   
+        left: -10%;
+        opacity: 1;
+        top: 0;
+        z-index: -12;
+        -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+        -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+        -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+        box-shadow:2px 0px 14px rgba(0,0,0,.6);
+        
+    }
+
+    &::after {
+        content: '';
+        width: 0%;
+        height: 100%;
+        display: block;
+        background: $color-2;
+        position: absolute;
+        -ms-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg); 
+        transform: skewX(-20deg);   
+        left: -10%;
+        opacity: 0;
+        top: 0;
+        z-index: -15;
+        -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+        -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+        -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+        transition: all .4s cubic-bezier(.2,.95,.57,.99);
+        box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+    }
+
+    &:hover {        
+        color: $color-4!important;
+
+        &::before {
+        opacity:1;
+        width: 130%;
+        }
+
+        &::after {
+            opacity:1;
+            width: 130%;
+        }
+    }    
+
+}
+
+.btn-primary-white {
+    @include text ($font-base, 400, $color-4, center, $transform: true);
+    text-shadow: 1px 1px 5px black;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 0px solid $color-4;
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+    z-index:10;
+    margin: 3rem 0;
+    padding: 1rem;
+    
+    @media (min-width: $bp-tablet-min) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 2rem;
+    }  
+
+    &::before {
+        content: '';
+        width: 0%;
+        height: 100%;
+        display: block;
+        background: $color-0;
+        position: absolute;
+        text-shadow: none;
+        -ms-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg); 
+        transform: skewX(-20deg);   
+        left: -10%;
+        opacity: 1;
+        top: 0;
+        z-index: -12;
+        -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+        -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+        -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+        box-shadow:2px 0px 14px rgba(0,0,0,.6);
+        
+    }
+
+    &::after {
+        content: '';
+        width: 0%;
+        height: 100%;
+        display: block;
+        background: $color-2;
+        position: absolute;
+        text-shadow: none;
+        -ms-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg); 
+        transform: skewX(-20deg);   
+        left: -10%;
+        opacity: 0;
+        top: 0;
+        z-index: -15;
+        -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+        -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+        -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+        transition: all .4s cubic-bezier(.2,.95,.57,.99);
+        box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+    }
+
+    &:hover {        
+        text-shadow: none;
+        border: 0px solid $color-2;
+        color: $color-4!important;
+
+        &::before {
+        opacity:1;
+        width: 116%;
+        }
+
+        &::after {
+            opacity:1;
+            width: 120%;
+        }
+    }    
+}

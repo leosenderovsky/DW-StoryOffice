@@ -1,0 +1,43 @@
+.error {
+    display:block;
+    position: relative;
+    width:auto;
+    @include text ($font-base, 400, $color-0, center, $transform: false);
+    font-size: 3rem;
+    margin: 3rem;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.reel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+    height: 30em;
+    line-height: 100%;
+    background: url(https://pixabay.com/static/uploads/photo/2013/07/12/14/09/film-reel-147850_960_720.png);
+    background-size: 30em 30em;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    text-align: center;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: spin;
+  }
+  
+  div i {
+    content: "";
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
