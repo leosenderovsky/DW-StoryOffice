@@ -380,6 +380,11 @@ button {
   align-items: center;
 }
 
+.carousel-inner3 {
+  width: 80%;
+  align-items: center;
+}
+
 .carousel-item {
   object-fit: scale-down;
   align-items: center;
@@ -825,9 +830,13 @@ input[type=submit]:hover {
 }
 
 .card {
-  margin: 1rem;
   padding: 1rem;
   width: 36rem;
+}
+@media (min-width: 901px) {
+  .card {
+    margin: 0 2.5rem 3rem 2.5rem;
+  }
 }
 
 .card-img-top {

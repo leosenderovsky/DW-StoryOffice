@@ -5,9 +5,11 @@
 }
 
 .card {
-    margin: 1rem;
     padding: 1rem;
     width: 36rem;
+    @media (min-width: 901px) {
+        margin: 0 2.5rem 3rem 2.5rem;
+    }
 }
 
 .card-img-top {
