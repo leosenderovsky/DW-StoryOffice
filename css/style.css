@@ -395,6 +395,8 @@ button {
 }
 
 .carousel-caption {
+  height: 200px;
+  padding: 0;
   top: 50%;
   transform: translateY(-50%);
 }

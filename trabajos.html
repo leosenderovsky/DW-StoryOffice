@@ -10,8 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
@@ -142,7 +142,7 @@
         </button>
         </div>
       </div>
-      <div class="videos-trabajos">
+      <div>
         <div class="owl-carousel owl-theme" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="1000">
           <div class="item-video" data-merge="3"><a class="owl-video" href="https://player.vimeo.com/video/122761041"></a></div>
           <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/embed/Ju_RJjSX_Wc"></a></div>
@@ -180,8 +180,15 @@
   <script>
     AOS.init();
   </script>  
-  <script src="jquery.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/owlCarousel/docs/assets/vendors/jquery.min.js"></script>
+  <script src="lib/owlCarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      $(".owl-carousel").owlCarousel();
+
+  });
+  </script>
   
 </body>
 
