@@ -388,6 +388,10 @@ button {
 .carousel-item {
   object-fit: scale-down;
   align-items: center;
+  -webkit-transition: 0.1s ease-in-out left;
+  -moz-transition: 0.1s ease-in-out left;
+  -o-transition: 0.1s ease-in-out left;
+  transition: 0.1s ease-in-out left;
 }
 
 .carousel-caption {
@@ -718,15 +722,11 @@ input[type=submit]:hover {
 #quienes-somos {
   background-image: url(../images/staff/video-team.jpg);
   background-size: cover;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial;
   background-repeat: no-repeat;
-  background-position: sticky;
+  background-attachment: fixed;
   text-align: center;
   z-index: -1;
-  height: 70vh;
+  height: 55vh;
   margin-bottom: -50px;
 }
 
@@ -736,6 +736,10 @@ input[type=submit]:hover {
 }
 
 #contacto {
+  background-image: url(../../images/map/map-opacity.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: block;
   text-align: center;
   height: auto;
@@ -747,13 +751,24 @@ input[type=submit]:hover {
   text-align: center;
 }
 
-.contacto {
+.contacto-home {
   margin: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px black;
+}
+
+.contacto-inner {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #023E8A;
-  text-align: justify;
+  text-align: center;
   font-size: 3rem;
+  margin: 3rem;
 }
 
 .presupuesta {
@@ -878,7 +893,7 @@ input[type=submit]:hover {
 }
 
 .videos-trabajos {
-  width: 70%;
+  width: 100%;
 }
 
 iframe {
