@@ -14,7 +14,7 @@
 
 .header-video {
     @extend %flexbox-center;
-    width: $width-base;
+    width: 100%;
     object-fit: cover;
 
     @media (min-width: $bp-desktop) {
