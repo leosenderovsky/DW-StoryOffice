@@ -790,7 +790,7 @@ input[type=submit]:hover {
 }
 
 #contacto {
-  background-image: url(../../images/map/map-opacity.jpg);
+  background-image: url(../images/map/map-opacity.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
