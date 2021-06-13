@@ -4,5 +4,15 @@
     width:auto;
     @include text ($font-base, 400, $color-0, center, $transform: false);
     font-size: 3rem;
-    margin: 3rem;
+    margin: 4rem;
+
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        margin: 4rem;
+        padding: 0 3rem;
+    }
+
+    @media (max-width: $bp-mobile) {
+        margin: 4rem 2rem;
+        padding: 0 1rem;
+    }
 }

@@ -4,11 +4,11 @@
     }
 
     @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
-        padding-top:10%;
+        padding-top:20%;
     }
     
     @media (max-width: $bp-mobile) {
-        padding-top:15%;
+        padding-top:40%;
     }
 }
 
@@ -31,7 +31,7 @@
 
 
     @media (min-width: $bp-desktop) {
-        margin: 0 auto;        
+        margin: 3rem auto;        
         font-size: 5.25rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -43,7 +43,7 @@
     }  
     
     @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
-        margin: 2rem 5rem;
+        margin: 3rem 5rem;
         font-size: 6rem;
         @include flexbox (flex, center);
         flex-wrap: wrap;
@@ -52,7 +52,7 @@
     }
 
     @media (max-width: $bp-mobile) {
-        margin: 1rem;
+        margin: 2rem 1rem;
         font-size: 3rem;
         @include flexbox (flex, center);
         flex-wrap: wrap;
@@ -132,8 +132,6 @@
     background-attachment: fixed;
     text-align: center;
     z-index: -1;
-    height: 55vh;
-    margin-bottom: -50px;
 }
 
 #presupuesta {

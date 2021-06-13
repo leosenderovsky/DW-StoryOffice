@@ -4,7 +4,6 @@
 
 .carousel-inner2 {
     width: 80%;
-    height: 300px;
     align-items:center;
 }
 
@@ -22,11 +21,34 @@
     transition: 0.1s ease-in-out left;
 }
 
+.carousel-indicators {
+    @media (max-width: $bp-tablet-max) {
+        display: none;
+    }
+}
+
 .carousel-caption {
-    height: 200px;
-    padding: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    @media (min-width: $bp-desktop) {
+        height: 200px;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @media (min-width:$bp-tablet-min) and (max-width: $bp-tablet-max) {
+        height: 130px;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @media (max-width:$bp-mobile) {
+        height: 30px;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
 }
 
 
@@ -40,11 +62,11 @@
     }
     
     @media (min-width:$bp-tablet-min) and (max-width: $bp-tablet-max) {
-        font-size: 1000%;
+        font-size: 8rem;
     }
 
     @media (max-width:$bp-mobile) {
-        font-size: 400%;
+        font-size: 3rem;
     }
 }
 
@@ -57,22 +79,40 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: transparent;
-    border-radius: 100%;
-    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
-    height: 50px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    width: 50px;
-    z-index: 1;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    color: #fff;
-    border: 2px solid #fff;
-    font-size: 0;    
-    outline: 0;
+    @media (min-width:$bp-tablet-min) {
+        background-color: transparent;
+        border-radius: 100%;
+        box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+        height: 50px;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        width: 50px;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        color: #fff;
+        border: 2px solid #fff;
+        font-size: 0;    
+        outline: 0;
+    }
+    @media (max-width:$bp-mobile) {
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+        height: 25px;
+        width: 25px;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        color: #fff;
+        border: 2px solid #fff;
+        font-size: 0;    
+        outline: 0;
+    }
+    
 }
 
 .carousel-control-prev-icon2 {

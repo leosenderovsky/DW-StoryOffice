@@ -67,6 +67,17 @@
     text-align: center;
     background-color: $color-2;
     color: $color-4;
+    margin: 5rem 0 5rem 0;
+}
+
+.section-title-presupuesta {
+    font-family: $font-base;
+    font-weight: 300;
+    font-size: 5rem;
+    text-transform: $text-transform-base;
+    text-align: center;
+    background-color: $color-2;
+    color: $color-4;
     margin: 0 0 5rem 0;
 }
 
@@ -95,25 +106,96 @@ hr.separador-white {
     margin: 2rem 0 5rem 0;
     font-family: $font-base;
     font-weight: 300;
+    text-transform: $text-transform-base;
+    text-align: center;
+    color: $color-0;
+    padding: 2rem;
+
+    @media (min-width: $bp-desktop) {
+        font-size: 5rem;
+    }
+
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        font-size: 5rem;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 5rem;
+    }
+}
+
+.inner-section-title-top {
+    margin: 2rem 0 5rem 0;
+    font-family: $font-base;
+    font-weight: 300;
     font-size: 5rem;
     text-transform: $text-transform-base;
     text-align: center;
     color: $color-0;
-    padding-bottom: 1rem;
+    padding: 2rem;
+
+    @media (min-width: $bp-desktop) {
+        font-size: 5rem;
+    }
+
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        font-size: 5rem;
+        padding-top:10%;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 5rem;
+        padding-top:15%;
+    }
 }
 
 .inner-section-title-white {
     margin: 1rem;
     font-family: $font-base;
     font-weight: 300;
-    font-size: 5rem;
     text-transform: $text-transform-base;
     text-align: center;
     color: $color-4;
     text-shadow: $shadow;
-    padding-bottom: 1rem;
+    padding: 2rem;
+
+    @media (min-width: $bp-desktop) {
+        font-size: 5rem;
+    }
+
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 3rem;
+    }
 }
 
+.inner-section-title-white-top {
+    margin: 1rem;
+    font-family: $font-base;
+    font-weight: 300;
+    text-transform: $text-transform-base;
+    text-align: center;
+    color: $color-4;
+    text-shadow: $shadow;
+    padding: 2rem;
+
+    @media (min-width: $bp-desktop) {
+        font-size: 5rem;
+    }
+
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        font-size: 4rem;
+        padding-top:5%;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 3rem;
+        padding-top:10%;
+    }
+}
 
 
 

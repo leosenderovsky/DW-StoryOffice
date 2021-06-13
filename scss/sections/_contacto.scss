@@ -10,10 +10,18 @@
 .inner-contacto-map {
     width: 600px;
     height: 400px;
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        margin: 5% 10%;
+    }
+
+    @media (max-width: $bp-mobile) {
+        width: 400px;
+        height: 300px;
+    }
 }
 
 .inner-contacto-text {
-    margin: 10%;
-    @include text ($font-base, 200, $color-0, center, $transform: false);
+    margin: 5% 10%;
+    @include text ($font-base, 200, $color-0, justify, $transform: false);
     font-size: 3rem;
 }

@@ -10,6 +10,14 @@
     @media (min-width: 901px) {
         margin: 0 2.5rem 3rem 2.5rem;
     }
+
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        margin: 2rem 2rem;
+    }
+
+    @media (max-width: $bp-mobile) {
+        margin: 0 2rem 2rem 2rem;
+    }
 }
 
 .card-img-top {
