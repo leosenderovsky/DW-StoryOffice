@@ -510,6 +510,14 @@ button {
   width: 100%;
 }
 
+.carousel-example {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .contact-form-container {
   margin: 5% 10% 0 15%;
 }

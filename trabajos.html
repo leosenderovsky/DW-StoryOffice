@@ -10,6 +10,7 @@
   <link href="lib/rvslider/css/rvslider.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/elder-carousel/dist/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -65,7 +66,10 @@
   <div class="body-container">
     <section id="confian-en-nosotros">
       <h1 class="inner-section-title-top" data-aos="fade-up" data-aos-duration="1000">CONFÍAN EN NOSOTROS</h1>
-      <div id="carouselExampleDark" class="carousel slide carousel-dark slide d-flex" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="1000">
+
+      <!--DEJO COMENTADO POR LAS DUDAS EL CARRUSEL DE BOOTSTRAP  
+
+        <div id="carouselExampleDark" class="carousel slide carousel-dark slide d-flex" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="1000">
         <div class="carousel-inner2 container-fluid">
           <div class="carousel-item active">
             <img src="images/clientes/Coca-Cola_logo.png" loading="lazy" alt="Coca Cola" class="img-fluid marca">
@@ -89,7 +93,18 @@
             <img src="images/clientes/unilever-logo.png" loading="lazy" alt="Unilever" class="img-fluid marca">
           </div>
         </div>
+      </div>-->
+    <div class="container-fluid d-flex">
+      <div class="carousel-example justify-content-center" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="1000">
+        <div><img src="images/clientes/Coca-Cola_logo.png" loading="lazy" alt="Coca Cola" class="img-fluid marca"></div>
+        <div><img src="images/clientes/Mondelez.png" loading="lazy" alt="Mondelez" class="img-fluid marca"></div>
+        <div><img src="images/clientes/Rappi_logo.png" loading="lazy" alt="Rappi" class="img-fluid marca"></div>
+        <div><img src="images/clientes/REMAX_logo.png" loading="lazy" alt="ReMax" class="img-fluid marca"></div>
+        <div><img src="images/clientes/Burger-King.png" loading="lazy" alt="Burger King" class="img-fluid marca"></div>
+        <div><img src="images/clientes/MercadoLibre-1.png" loading="lazy" alt="Mercado Libre" class="img-fluid marca"></div>
+        <div><img src="images/clientes/unilever-logo.png" loading="lazy" alt="Unilever" class="img-fluid marca"></div>
       </div>
+    </div>
     </section>
     <hr class="separador" data-aos="fade-up" data-aos-duration="1000">
     <section class="videos-section">
@@ -173,6 +188,18 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="/lib/elder-carousel/dist/index.min.js"></script>
+  <script>
+    new ElderCarousel('.carousel-example',{ 
+    items: 1,
+    play: true,
+    playInterval: 2000,
+    speed: 500,
+    navs:false
+    });
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
