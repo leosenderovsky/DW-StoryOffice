@@ -764,7 +764,7 @@ input[type=submit]:hover {
 }
 
 #quienes-somos {
-  background-image: url(../images/staff/video-team.webp);
+  background-image: url(../images/staff/video-team.jpg?format=webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -778,7 +778,7 @@ input[type=submit]:hover {
 }
 
 #contacto {
-  background-image: url(../images/map/map-opacity.webp);
+  background-image: url(../images/map/map-opacity.jpg?format=webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -855,7 +855,7 @@ input[type=submit]:hover {
 }
 
 .staff-page {
-  background-image: url(../images/staff/video-team.webp);
+  background-image: url(../images/staff/video-team.jpg?format=webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: fixed;
