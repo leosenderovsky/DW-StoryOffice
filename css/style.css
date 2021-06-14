@@ -625,10 +625,6 @@ input[type=submit]:hover {
   font-size: 3rem;
 }
 
-.video-container {
-  padding-top: 5%;
-}
-
 .header-video {
   width: 100%;
   object-fit: cover;
@@ -1094,7 +1090,7 @@ div i {
 
 .body-container {
   min-height: calc(100vh);
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100%;
 }
 
