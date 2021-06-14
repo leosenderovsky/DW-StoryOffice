@@ -625,20 +625,8 @@ input[type=submit]:hover {
   font-size: 3rem;
 }
 
-@media (min-width: 961px) {
-  .video-container {
-    padding-top: 5%;
-  }
-}
-@media (min-width: 401px) and (max-width: 960px) {
-  .video-container {
-    padding-top: 20%;
-  }
-}
-@media (max-width: 400px) {
-  .video-container {
-    padding-top: 40%;
-  }
+.video-container {
+  padding-top: 5%;
 }
 
 .header-video {
@@ -776,7 +764,7 @@ input[type=submit]:hover {
 }
 
 #quienes-somos {
-  background-image: url(../images/staff/video-team.webpp);
+  background-image: url(../images/staff/video-team.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -790,7 +778,7 @@ input[type=submit]:hover {
 }
 
 #contacto {
-  background-image: url(../images/map/map-opacity.webpp);
+  background-image: url(../images/map/map-opacity.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -867,7 +855,7 @@ input[type=submit]:hover {
 }
 
 .staff-page {
-  background-image: url(../images/staff/video-team.webpp);
+  background-image: url(../images/staff/video-team.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: fixed;
@@ -877,26 +865,24 @@ input[type=submit]:hover {
 
 .opacity {
   background-color: rgba(0, 0, 0, 0.8);
+  margin: 1rem;
 }
 @media (min-width: 961px) {
   .opacity {
     width: 80%;
     padding: 1rem;
-    margin: 2rem;
   }
 }
 @media (min-width: 401px) {
   .opacity {
     width: 90%;
     padding: 0 1rem;
-    margin: 5rem 2rem;
   }
 }
 @media (max-width: 400px) {
   .opacity {
     width: 90%;
     padding: 0 1rem;
-    margin: 5rem 2rem;
   }
 }
 
@@ -1161,49 +1147,18 @@ hr.separador-white {
   text-align: center;
   color: #023E8A;
   padding: 2rem;
-}
-@media (min-width: 961px) {
-  .inner-section-title {
-    font-size: 5rem;
-  }
-}
-@media (min-width: 401px) and (max-width: 960px) {
-  .inner-section-title {
-    font-size: 5rem;
-  }
-}
-@media (max-width: 400px) {
-  .inner-section-title {
-    font-size: 5rem;
-  }
+  font-size: 5rem;
 }
 
 .inner-section-title-top {
-  margin: 2rem 0 5rem 0;
+  margin: 1rem 0 5rem 0;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   font-size: 5rem;
   text-transform: uppercase;
   text-align: center;
   color: #023E8A;
-  padding: 2rem;
-}
-@media (min-width: 961px) {
-  .inner-section-title-top {
-    font-size: 5rem;
-  }
-}
-@media (min-width: 401px) and (max-width: 960px) {
-  .inner-section-title-top {
-    font-size: 5rem;
-    padding-top: 10%;
-  }
-}
-@media (max-width: 400px) {
-  .inner-section-title-top {
-    font-size: 5rem;
-    padding-top: 15%;
-  }
+  font-size: 5rem;
 }
 
 .inner-section-title-white {
@@ -1250,13 +1205,11 @@ hr.separador-white {
 @media (min-width: 401px) and (max-width: 960px) {
   .inner-section-title-white-top {
     font-size: 4rem;
-    padding-top: 5%;
   }
 }
 @media (max-width: 400px) {
   .inner-section-title-white-top {
     font-size: 3rem;
-    padding-top: 10%;
   }
 }
 

@@ -1,15 +1,5 @@
 .video-container {
-    @media (min-width: $bp-desktop) {
-        padding-top:5%;
-    }
-
-    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
-        padding-top:20%;
-    }
-    
-    @media (max-width: $bp-mobile) {
-        padding-top:40%;
-    }
+   padding-top:5%;
 }
 
 .header-video {
