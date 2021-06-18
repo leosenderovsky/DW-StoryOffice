@@ -768,7 +768,7 @@ input[type=submit]:hover {
 }
 
 #quienes-somos {
-  background-image: url(../../images/staff/video-team.webp);
+  background-image: url(../images/staff/video-team.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -782,7 +782,7 @@ input[type=submit]:hover {
 }
 
 #contacto {
-  background-image: url(../../images/map/map-opacity.webp);
+  background-image: url(../images/map/map-opacity.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
