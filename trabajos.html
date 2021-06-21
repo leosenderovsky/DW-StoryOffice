@@ -10,8 +10,9 @@
   <link href="lib/rvslider/css/rvslider.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.theme.default.min.css">
+  <link href="lib/rvslider/css/rvslider.min.css" rel="stylesheet">
+  <!--<link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.theme.default.min.css">-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -103,43 +104,80 @@
       <div class="videos-trabajos">
         <div class="owl-carousel owl-theme" data-aos="fade-up" data-aos-duration="1000">
           <div class="item-video" data-merge="3"><a class="owl-video" href="https://vimeo.com/122761041"></a></div>
-          <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=Ju_RJjSX_Wc"></a></div>
+          <div class="item-video" data-merge="1"><a class="owl-video"
+              href="https://www.youtube.com/watch?v=Ju_RJjSX_Wc"></a></div>
           <div class="item-video" data-merge="2"><a class="owl-video" href="https://vimeo.com/143062227"></a></div>
           <div class="item-video" data-merge="1"><a class="owl-video" href="https://vimeo.com/208041787"></a></div>
           <div class="item-video" data-merge="2"><a class="owl-video" href="https://vimeo.com/159111254"></a></div>
-          <div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=IWgamMyqtME"></a></div>
-      </div>
+          <div class="item-video" data-merge="3"><a class="owl-video"
+              href="https://www.youtube.com/watch?v=IWgamMyqtME"></a></div>
+        </div>
+        <div class="rvs-container" data-aos="fade-up" data-aos-duration="1000">
+
+          <div class="rvs-item-container">
+            <div class="rvs-item-stage">
+
+              <div class="rvs-item" style="background-image: url(LARGE_IMAGE_URL)">
+                <p class="rvs-item-text">VIDEO_TITLE <small>by VIDEO_CREDITS</small></p>
+                <img src="images/thmb-trabajos/ok-industrial.jpg" alt="ok-industrial" class="d-block w-100"><a
+                  href="https://vimeo.com/122761041" class="rvs-play-video"></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="rvs-nav-container">
+            <a class="rvs-nav-prev"></a>
+            <div class="rvs-nav-stage">
+
+              <a class="rvs-nav-item">
+                <span class="rvs-nav-item-thumb" style="background-image: url(SMALL_IMAGE_URL)"></span>
+                <h4 class="rvs-nav-item-title">VIDEO_TITLE</h4>
+                <small class="rvs-nav-item-credits">by VIDEO_CREDITS</small>
+              </a>
+
+            </div>
+            <a class="rvs-nav-next"></a>
+          </div>
+
+        </div>
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-aos="fade-up"
           data-aos-duration="1000">
           <div class="carousel-inner container-fluid">
             <div class="carousel-item active" data-bs-interval="2000">
               <div class="video-frame">
-                <img src="images/thmb-trabajos/ok-industrial.jpg" data-video="https://player.vimeo.com/video/122761041" class="d-block video-item" alt="ok-industrial">
+                <img src="images/thmb-trabajos/ok-industrial.jpg" data-video="https://player.vimeo.com/video/122761041"
+                  class="d-block video-item" alt="ok-industrial">
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <div class="video-frame">
-                <img src="images/thmb-trabajos/answer-seguros.jpg" data-video="https://www.youtube.com/embed/Ju_RJjSX_Wc" class="d-block" alt="answer-seguros">
+                <img src="images/thmb-trabajos/answer-seguros.jpg"
+                  data-video="https://www.youtube.com/embed/Ju_RJjSX_Wc" class="d-block" alt="answer-seguros">
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <div class="video-frame">
-                <img src="images/thmb-trabajos/eidico-costa-esmeralda.jpg" data-video="https://player.vimeo.com/video/143062227" class="d-block" alt="eidico-costa-esmeralda">
+                <img src="images/thmb-trabajos/eidico-costa-esmeralda.jpg"
+                  data-video="https://player.vimeo.com/video/143062227" class="d-block" alt="eidico-costa-esmeralda">
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <div class="video-frame">
-                <img src="images/thmb-trabajos/sura-expoagro.jpg" data-video="https://player.vimeo.com/video/208041787" class="d-block" alt="sura-expoagro">
+                <img src="images/thmb-trabajos/sura-expoagro.jpg" data-video="https://player.vimeo.com/video/208041787"
+                  class="d-block" alt="sura-expoagro">
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <div class="video-frame">
-                <img src="images/thmb-trabajos/universidad-kennedy.jpg" data-video="https://player.vimeo.com/video/159111254" class="d-block" alt="universidad-kennedy">
+                <img src="images/thmb-trabajos/universidad-kennedy.jpg"
+                  data-video="https://player.vimeo.com/video/159111254" class="d-block" alt="universidad-kennedy">
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <div class="video-frame">
-                <img src="images/thmb-trabajos/eidico-casas.jpg" data-video="https://www.youtube.com/embed/IWgamMyqtME" class="d-block" alt="eidico-casas">
+                <img src="images/thmb-trabajos/eidico-casas.jpg" data-video="https://www.youtube.com/embed/IWgamMyqtME"
+                  class="d-block" alt="eidico-casas">
               </div>
             </div>
           </div>
@@ -224,11 +262,17 @@
   </footer>
   <!-- JavaScript Bundle with Popper -->
 
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>!-->  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="lib/rvslider/js/rvslider.min.js"></script>
+  <script>
+    jQuery(function ($) {
+      $('.rvs-container').rvslider();
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-  <script src="lib/OwlCarousel2/docs_src/assets/vendors/jquery.min.js"></script>
+  <!--<script src="lib/OwlCarousel2/docs_src/assets/vendors/jquery.min.js"></script>
   <script src="lib/OwlCarousel2/dist/owl.carousel.min.js"></script>
   <script>
     $(document).ready(function(){
@@ -253,7 +297,7 @@
             }
         }
     })
-  </script>
+  </script>-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
