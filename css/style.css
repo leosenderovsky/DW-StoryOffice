@@ -536,7 +536,8 @@ button {
 }
 @media (min-width: 961px) {
   .rvs-container {
-    width: 58%;
+    width: 42%;
+    height: auto;
   }
 }
 

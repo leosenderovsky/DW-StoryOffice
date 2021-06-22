@@ -148,7 +148,8 @@
     @include text ($font-base, 500, $color-4, justify, $transform: true);
     font-size: 2rem;
     @media (min-width: $bp-desktop) {
-        width: 58%;
+        width: 42%;
+        height: auto;
     }
 }
 
