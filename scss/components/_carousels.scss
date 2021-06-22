@@ -142,3 +142,71 @@
     width: 640px;
     height: 360px;
 }
+
+.rvs-container {
+    background-color: $color-0;
+    @include text ($font-base, 500, $color-4, justify, $transform: true);
+    font-size: 2rem;
+    @media (min-width: $bp-desktop) {
+        width: 58%;
+    }
+}
+
+.rvs-container a.rvs-close:active,
+.rvs-container a.rvs-close:focus,
+.rvs-container a.rvs-close:hover,
+.rvs-container a.rvs-nav-item.rvs-active,
+.rvs-container a.rvs-nav-item.rvs-active:active,
+.rvs-container a.rvs-nav-item.rvs-active:focus,
+.rvs-container a.rvs-nav-item.rvs-active:hover,
+.rvs-container a.rvs-play-video:active,
+.rvs-container a.rvs-play-video:focus,
+.rvs-container a.rvs-play-video:hover,
+.rvs-container.rvs-thumb-play .rvs-nav-container .rvs-video-active span.rvs-nav-item-thumb:before,
+.rvs-container.rvs-thumb-play .rvs-nav-container span.rvs-nav-item-thumb:hover:before {
+    border-color: $color-2;
+    background-color: $color-2;
+}
+
+.rvs-container a.rvs-nav-item.rvs-active,
+.rvs-container a.rvs-nav-item.rvs-active:active,
+.rvs-container a.rvs-nav-item.rvs-active:first-child,
+.rvs-container a.rvs-nav-item.rvs-active:first-child:active,
+.rvs-container a.rvs-nav-item.rvs-active:first-child:focus,
+.rvs-container a.rvs-nav-item.rvs-active:first-child:hover,
+.rvs-container a.rvs-nav-item.rvs-active:focus,
+.rvs-container a.rvs-nav-item.rvs-active:hover,
+.rvs-container a.rvs-play-video:active,
+.rvs-container a.rvs-play-video:focus,
+.rvs-container a.rvs-play-video:hover {
+    border-color: $color-2;
+    background-color: $color-2;
+}
+
+.rvs-container a.rvs-nav-item,
+.rvs-container a.rvs-nav-item:active,
+.rvs-container a.rvs-nav-item:focus,
+.rvs-container a.rvs-nav-item:hover,
+.rvs-container a.rvs-nav-next,
+.rvs-container a.rvs-nav-next:active,
+.rvs-container a.rvs-nav-next:focus,
+.rvs-container a.rvs-nav-next:hover,
+.rvs-container a.rvs-nav-prev,
+.rvs-container a.rvs-nav-prev:active,
+.rvs-container a.rvs-nav-prev:focus,
+.rvs-container a.rvs-nav-prev:hover,
+.rvs-nav-container {
+    border-color: $color-1;
+}
+
+.rvs-container a.rvs-nav-item:active,
+.rvs-container a.rvs-nav-item:focus,
+.rvs-container a.rvs-nav-item:hover,
+.rvs-container a.rvs-nav-next:active,
+.rvs-container a.rvs-nav-next:focus,
+.rvs-container a.rvs-nav-next:hover,
+.rvs-container a.rvs-nav-prev:active,
+.rvs-container a.rvs-nav-prev:focus,
+.rvs-container a.rvs-nav-prev:hover {
+    background-color: $color-1;
+}
