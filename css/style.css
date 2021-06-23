@@ -674,7 +674,7 @@ input[type=submit]:hover {
   flex-wrap: wrap;
 }
 
-.inner-section, hr.separador, .videos-section, .staff, .header-video, .carousel-caption h6, .carousel-caption p {
+.inner-section, hr.separador, .videos-section, .staff, .header-video, .carousel, .carousel-caption h6, .carousel-caption p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -853,9 +853,18 @@ input[type=submit]:hover {
   background-image: url(../images/staff/video-team.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   text-align: center;
   z-index: -1;
+}
+@media (max-width: 960px) {
+  #quienes-somos {
+    background-position: right;
+  }
+}
+@media (min-width: 961px) {
+  #quienes-somos {
+    background-attachment: fixed;
+  }
 }
 
 #presupuesta {
@@ -867,10 +876,19 @@ input[type=submit]:hover {
   background-image: url(../images/map/map-opacity.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   display: block;
   text-align: center;
   height: auto;
+}
+@media (max-width: 960px) {
+  #contacto {
+    background-position: right;
+  }
+}
+@media (min-width: 961px) {
+  #contacto {
+    background-attachment: fixed;
+  }
 }
 
 .mapa {
@@ -1149,7 +1167,7 @@ div i {
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
 }
 
 :root {

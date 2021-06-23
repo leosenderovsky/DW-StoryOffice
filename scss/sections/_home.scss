@@ -115,9 +115,14 @@
     background-image: url(../images/staff/video-team.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     text-align: center;
     z-index: -1;
+    @media (max-width: $bp-tablet-max) {
+        background-position: right;
+    }
+    @media (min-width: $bp-desktop) {        
+        background-attachment: fixed;
+    }
 }
 
 #presupuesta {
@@ -129,10 +134,15 @@
     background-image: url(../images/map/map-opacity.webp);    
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     display: block;
     text-align: center;
     height: auto;
+    @media (max-width: $bp-tablet-max) {
+        background-position: right;
+    }
+    @media (min-width: $bp-desktop) {        
+        background-attachment: fixed;
+    }
 }
 
 .mapa {

@@ -1,5 +1,6 @@
 .carousel {
     margin: 0 0;
+    @extend %flexbox-center; 
 }
 
 .carousel-inner2 {
