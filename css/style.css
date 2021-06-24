@@ -75,7 +75,7 @@
   box-shadow: 1px 1px 20px #222;
 }
 
-.logo {
+img.logo {
   padding: 10px 0px 10px 10px;
   width: 25em;
   max-height: 70px;
@@ -396,6 +396,11 @@ button {
   -moz-transition: transform 500ms ease 0s;
   -o-transition: transform 500ms ease 0s;
   transition: transform 500ms ease 0s;
+}
+
+img.d-block.w-100 {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 960px) {

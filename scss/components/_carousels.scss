@@ -27,6 +27,12 @@
     transition: transform 500ms ease 0s;
 }
 
+img.d-block.w-100 {
+    width: 100%;
+    height: auto;
+}
+
+
 
 .carousel-indicators {
     @media (max-width: $bp-tablet-max) {
