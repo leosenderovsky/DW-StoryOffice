@@ -17,13 +17,16 @@
   .logo-footer {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: 50%;
+    height: auto;
   }
 }
 @media (min-width: 401px) and (max-width: 960px) {
   .logo-footer {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 2rem;
-    width: 70%;
+    width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 400px) {
@@ -31,6 +34,7 @@
     margin-left: 1rem;
     padding-top: 1rem;
     width: 50%;
+    height: auto;
   }
 }
 
@@ -40,22 +44,25 @@
   color: #023E8A;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 0;
   padding-right: 1rem;
 }
 @media (min-width: 961px) {
   .text-footer {
     font-size: 2.25rem;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 401px) and (max-width: 960px) {
   .text-footer {
     font-size: 2.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 400px) {
   .text-footer {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 
