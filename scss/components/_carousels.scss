@@ -222,6 +222,8 @@
 
 .rvs-container.rvs-horizontal.rvs-xs.rvs-sm.rvs-md.rvs-lg {
     
+    height: 230px;
+    
     @media (min-width: $bp-desktop) {
         height: 810px;
     }
@@ -231,7 +233,7 @@
     }
 
     @media (max-width: $bp-mobile) {
-        height: 200px;
+        height: 230px;
     }
 
     

@@ -609,6 +609,9 @@ button {
   background-color: #005b96;
 }
 
+.rvs-container.rvs-horizontal.rvs-xs.rvs-sm.rvs-md.rvs-lg {
+  height: 230px;
+}
 @media (min-width: 961px) {
   .rvs-container.rvs-horizontal.rvs-xs.rvs-sm.rvs-md.rvs-lg {
     height: 810px;
@@ -621,7 +624,7 @@ button {
 }
 @media (max-width: 400px) {
   .rvs-container.rvs-horizontal.rvs-xs.rvs-sm.rvs-md.rvs-lg {
-    height: 200px;
+    height: 230px;
   }
 }
 
