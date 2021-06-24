@@ -84,7 +84,7 @@
 hr.separador {
     align-items: center;
     text-align: center;
-    margin: 2% 10%;
+    margin: 5% 10%;
     border-top: 3px solid $color-1;
     @extend %flexbox-center;
 }
@@ -92,7 +92,7 @@ hr.separador {
 hr.separador-white {
     align-items: center;
     text-align: center;
-    margin: 2% 2%;
+    margin: 5% 2%;
     border-top: 3px solid $color-4;
 }
 

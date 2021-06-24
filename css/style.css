@@ -541,8 +541,12 @@ button {
 }
 @media (min-width: 961px) {
   .rvs-container {
-    width: 42%;
-    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width: 960px) {
+  .rvs-container {
+    width: 80%;
   }
 }
 
@@ -603,6 +607,22 @@ button {
 .rvs-container a.rvs-nav-prev:focus,
 .rvs-container a.rvs-nav-prev:hover {
   background-color: #005b96;
+}
+
+@media (min-width: 961px) {
+  .rvs-container.rvs-horizontal.rvs-xs.rvs-sm.rvs-md.rvs-lg {
+    height: 810px;
+  }
+}
+@media (min-width: 401px) {
+  .rvs-container.rvs-horizontal.rvs-xs.rvs-sm.rvs-md.rvs-lg {
+    height: 810px;
+  }
+}
+@media (max-width: 400px) {
+  .rvs-container.rvs-horizontal.rvs-xs.rvs-sm.rvs-md.rvs-lg {
+    height: 200px;
+  }
 }
 
 .contact-form-container {
@@ -1110,7 +1130,18 @@ input[type=submit]:hover {
   transition: filter 0.3s ease-in-out;
   align-self: center;
   margin: auto;
-  width: 70%;
+}
+@media (max-width: 960px) {
+  .marca {
+    width: 70%;
+    height: auto;
+  }
+}
+@media (min-width: 961px) {
+  .marca {
+    width: 25%;
+    height: auto;
+  }
 }
 .marca:hover {
   filter: grayscale(0%);
@@ -1243,14 +1274,14 @@ div i {
 hr.separador {
   align-items: center;
   text-align: center;
-  margin: 2% 10%;
+  margin: 5% 10%;
   border-top: 3px solid #005b96;
 }
 
 hr.separador-white {
   align-items: center;
   text-align: center;
-  margin: 2% 2%;
+  margin: 5% 2%;
   border-top: 3px solid #fff;
 }
 

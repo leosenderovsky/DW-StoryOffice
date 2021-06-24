@@ -4,7 +4,16 @@
     transition: filter .3s ease-in-out;
     align-self: center;
     margin: auto;
-    width: 70%;
+    @media (max-width: $bp-tablet-max) {
+        width: 70%;
+        height: auto;
+    }
+
+    @media (min-width: $bp-desktop) {
+        width: 25%;
+        height: auto;
+    }
+    
 
     &:hover {
         filter:grayscale(0%);

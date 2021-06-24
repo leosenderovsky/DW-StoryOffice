@@ -154,8 +154,10 @@
     @include text ($font-base, 500, $color-4, justify, $transform: true);
     font-size: 2rem;
     @media (min-width: $bp-desktop) {
-        width: 42%;
-        height: auto;
+        width: 100%;
+    }
+    @media (max-width: $bp-tablet-max) {
+        width: 80%;
     }
 }
 
@@ -216,4 +218,21 @@
 .rvs-container a.rvs-nav-prev:focus,
 .rvs-container a.rvs-nav-prev:hover {
     background-color: $color-1;
+}
+
+.rvs-container.rvs-horizontal.rvs-xs.rvs-sm.rvs-md.rvs-lg {
+    
+    @media (min-width: $bp-desktop) {
+        height: 810px;
+    }
+
+    @media (min-width: $bp-tablet-min) {
+        height: 810px;
+    }
+
+    @media (max-width: $bp-mobile) {
+        height: 200px;
+    }
+
+    
 }
