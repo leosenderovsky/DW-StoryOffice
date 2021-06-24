@@ -372,10 +372,15 @@ button {
 
 .carousel {
   margin: 0 0;
+  align-items: center;
+}
+
+.carousel-inner {
+  align-items: center;
 }
 
 .carousel-inner2 {
-  width: 80%;
+  width: 100%;
   align-items: center;
 }
 
@@ -959,12 +964,21 @@ input[type=submit]:hover {
 }
 
 .staff-page {
-  background-image: url(../../images/staff/video-team.webp);
+  background-image: url(../images/staff/video-team.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
-  background-position: fixed;
   background-size: cover;
   z-index: -1;
+}
+@media (max-width: 960px) {
+  .staff-page {
+    background-position: right;
+  }
+}
+@media (min-width: 961px) {
+  .staff-page {
+    background-attachment: fixed;
+  }
 }
 
 .opacity {
@@ -1095,6 +1109,8 @@ input[type=submit]:hover {
   filter: grayscale(100%);
   transition: filter 0.3s ease-in-out;
   align-self: center;
+  margin: auto;
+  width: 70%;
 }
 .marca:hover {
   filter: grayscale(0%);

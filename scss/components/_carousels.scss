@@ -1,10 +1,15 @@
 .carousel {
     margin: 0 0;
     @extend %flexbox-center; 
+    align-items:center;
+}
+
+.carousel-inner {
+    align-items:center;
 }
 
 .carousel-inner2 {
-    width: 80%;
+    width: 100%;
     align-items:center;
 }
 
