@@ -79,37 +79,37 @@
             <div class="container-fluid d-flex row justify-content-center m-10">
                 <div class="col-lg-5 col-sm-12">
                     <div class="contact-form-container">
-                        <form action="contacto.php" method="post">
+                        <form id="contact-form">
+                            <input type="hidden" name="contact_number">
                             <div data-aos="fade-up" data-aos-duration="1000">
-                                <label for="name" class="form-label">Nombre y apellido</label><span class="required">
-                                    *</span>
-                                <input type="text" class="form-control" id="name" required>
+                                <label class="form-label">Nombre y apellido</label><span class="required">*</span>
+                                <input type="text" name="user_name" class="form-control" required>
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000">
                                 <label for="empresa" class="form-label">Empresa o institución</label>
-                                <input type="text" class="form-control" id="empresa">
+                                <input type="text" class="form-control" name="empresa">
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000">
                                 <label for="adress" class="form-label">Dirección</label>
-                                <input type="text" class="form-control" id="adress">
+                                <input type="text" class="form-control" name="adress">
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000">
-                                <label for="telephone" class="form-label">Teléfono</label><span class="required">
-                                    *</span>
-                                <input type="text" class="form-control" id="telephone" required>
+                                <label for="telephone" class="form-label">Teléfono</label><span
+                                    class="required">*</span>
+                                <input type="text" class="form-control" name="telephone" required>
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000">
-                                <label for="email" class="form-label">Email</label><span class="required"> *</span>
-                                <input type="text" class="form-control" id="email" required>
+                                <label class="form-label">Email</label><span class="required">*</span>
+                                <input type="text" name="user_email" class="form-control" required>
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000">
-                                <label for="message" class="form-label">Mensaje</label><span class="required"> *</span>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <label for="message" class="form-label">Mensaje</label><span class="required">*</span>
+                                <textarea class="form-control" name="message" rows="5" required></textarea>
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000">
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="submit" class="btn btn-primary" value="Send">Enviar</button>
                             </div>
-                        </form>
+                        </form>                        
                     </div>
                 </div>
                 <!--Mapa de ubicación-->
@@ -129,17 +129,40 @@
     </div>
     <footer class="footer">
         <p class="col-12 col-sm-2 col-lg-3"><img src="images/logo/logo.png" loading="lazy" alt="StoryOffice"
-            class="logo-footer img-fluid"></p>
+                class="logo-footer img-fluid"></p>
         <p class="text-footer col-12 col-sm-4 col-lg-4">Soluciones audiovisuales para empresas e instituciones</p>
         <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_iXPtTeF0xkb9oLpPbrj9q');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
     </script>
 </body>
 
