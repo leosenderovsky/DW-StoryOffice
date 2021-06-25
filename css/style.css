@@ -714,7 +714,7 @@ input[type=submit]:hover {
   flex-wrap: wrap;
 }
 
-.inner-section, hr.separador, .videos-section, .staff, .header-video, .carousel, .carousel-caption h6, .carousel-caption p {
+.inner-section, hr.separador, .videos-section, .staff, .header-video, .video-container, .carousel, .carousel-caption h6, .carousel-caption p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -753,6 +753,21 @@ input[type=submit]:hover {
   color: #023E8A;
   text-align: justify;
   font-size: 3rem;
+}
+
+.video-container {
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 961px) {
+  .video-container {
+    height: 62.5em;
+  }
+}
+@media (max-width: 960px) {
+  .video-container {
+    height: 10%;
+  }
 }
 
 .header-video {

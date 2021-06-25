@@ -1,3 +1,16 @@
+.video-container {
+    @extend %flexbox-center;
+    width: 100%;
+    object-fit: cover;
+
+    @media (min-width: $bp-desktop) {
+        height: 62.5em;        
+    }
+    @media (max-width: $bp-tablet-max) {
+        height: 10%;
+    }
+}
+
 .header-video {
     @extend %flexbox-center;
     width: 100%;
