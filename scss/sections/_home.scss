@@ -1,4 +1,4 @@
-.header-video {
+/*.header-video {
     @extend %flexbox-center;
     width: 100%;
     object-fit: cover;
@@ -8,6 +8,18 @@
     }
     @media (max-width: $bp-tablet-max) {
         height: 10%;
+    }
+}*/
+
+.header-video-desktop {
+    @media (max-width: $bp-tablet-max) {
+        display: none;
+    }
+}
+
+.header-video-mobile {
+    @media (min-width: $bp-desktop) {
+        display: none;
     }
 }
 
