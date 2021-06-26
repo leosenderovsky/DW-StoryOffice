@@ -8,6 +8,11 @@
     @extend %flexbox-around;
 }
 
+img.logo-footer {
+    width: 200px;
+    height: auto;
+}
+
 .logo-footer {
     text-align: center;
     align-content: center;
@@ -27,10 +32,9 @@
     }
 
     @media (max-width: $bp-mobile) {
-        margin-left: 1rem;
-        padding-top: 1rem;
-        width: 50%;
-        height: auto;
+        padding-top: 2rem;
+        width: 30%;
+        height: 30%;
     }
 }
 
