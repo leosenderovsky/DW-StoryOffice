@@ -1159,16 +1159,22 @@ input[type=submit]:hover {
   align-self: center;
   margin: auto;
 }
-@media (max-width: 960px) {
+@media (max-width: 400px) {
   .marca {
-    width: 50%;
-    height: auto;
+    width: 200px;
+    height: 113px;
+  }
+}
+@media (min-width: 401px) and (max-width: 960px) {
+  .marca {
+    width: 300px;
+    height: 169px;
   }
 }
 @media (min-width: 961px) {
   .marca {
-    width: 25%;
-    height: auto;
+    width: 444px;
+    height: 250px;
   }
 }
 .marca:hover {
