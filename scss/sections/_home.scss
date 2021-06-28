@@ -125,6 +125,7 @@
 
 #quienes-somos {
     background-image: url(../images/staff/video-team.webp);
+    background-color: $color-0;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -143,7 +144,8 @@
 }
 
 #contacto {
-    background-image: url(../images/map/map-opacity.webp);    
+    background-image: url(../images/map/map-opacity.webp);
+    background-color: $color-0;    
     background-size: cover;
     background-repeat: no-repeat;
     display: block;

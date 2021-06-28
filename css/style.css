@@ -10,35 +10,47 @@
 }
 
 img.logo-footer {
-  width: 200px;
-  height: auto;
-}
-
-.logo-footer {
-  text-align: center;
-  align-content: center;
+  width: 250px;
+  height: 64px;
 }
 @media (min-width: 961px) {
-  .logo-footer {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 50%;
+  img.logo-footer {
+    width: 40%;
     height: auto;
   }
 }
 @media (min-width: 401px) and (max-width: 960px) {
-  .logo-footer {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    width: 100%;
+  img.logo-footer {
+    width: 80%;
     height: auto;
   }
 }
 @media (max-width: 400px) {
-  .logo-footer {
+  img.logo-footer {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.logo-footer-container {
+  text-align: center;
+  align-content: center;
+}
+@media (min-width: 961px) {
+  .logo-footer-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 401px) and (max-width: 960px) {
+  .logo-footer-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .logo-footer-container {
     padding-top: 2rem;
-    width: 30%;
-    height: 30%;
   }
 }
 
@@ -53,7 +65,8 @@ img.logo-footer {
 @media (min-width: 961px) {
   .text-footer {
     font-size: 2.25rem;
-    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 @media (min-width: 401px) and (max-width: 960px) {
@@ -907,6 +920,7 @@ input[type=submit]:hover {
 
 #quienes-somos {
   background-image: url(../images/staff/video-team.webp);
+  background-color: #023E8A;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -930,6 +944,7 @@ input[type=submit]:hover {
 
 #contacto {
   background-image: url(../images/map/map-opacity.webp);
+  background-color: #023E8A;
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
